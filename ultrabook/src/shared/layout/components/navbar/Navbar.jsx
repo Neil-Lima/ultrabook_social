@@ -24,10 +24,10 @@ function Navbar() {
                     <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#">Páginas</a>
                     <div class="dropdown-menu">
                         <Link class="dropdown-item" to="/albuns">Albuns</Link>
-                        <a class="dropdown-item" href="celebrações.html">Celebrações</a>
-                        <a class="dropdown-item" href="mensagens.html">Mensagens</a>                        
-                        <a class="dropdown-item" href="eventos.html">Eventos</a>
-                        <a class="dropdown-item" href="detalhesEventos.html">Detalhes eventos</a>
+                        <Link class="dropdown-item" to="/celebracoes">Celebrações</Link>
+                        <Link class="dropdown-item" to="/mensagens">Mensagens</Link>        
+                        <Link class="dropdown-item" to="/eventos">Eventos</Link>
+                        <Link class="dropdown-item" to="/detalheeventos">Detalhes eventos</Link>
                         <Link class="dropdown-item" to="/grupo">Grupos</Link>
                         <a class="dropdown-item" href="detalhesGrupos.html">Detalhes grupos</a>
                         <a class="dropdown-item" href="postarVideo.html">Postar videos</a>
@@ -59,7 +59,7 @@ function Navbar() {
                 </a>
         </div>
     </div>
-</nav>
+    </nav>
     </>
   )
 }

@@ -6,6 +6,8 @@ import Albuns from '../pages/albuns/Albuns'
 import Grupo from '../pages/grupos/Grupo'
 import Eventos from '../pages/eventos/Eventos'
 import Celebracoes from '../pages/celebracoes/Celebracoes'
+import DetalheEventos from '../pages/detalheEventos/DetalheEventos'
+import Mensagem from '../pages/mensagem/Mensagem'
 
 
 function Rotas() {
@@ -19,6 +21,8 @@ function Rotas() {
                     <Route path="/albuns" element={<Albuns />} />
                     <Route path="/eventos" element={<Eventos />} />
                     <Route path="/grupo" element={<Grupo />} />
+                    <Route path="/detalheeventos" element={<DetalheEventos />} />
+                    <Route path="/mensagens" element={<Mensagem />} />
                 </Routes>
             </BrowserRouter>
         </>

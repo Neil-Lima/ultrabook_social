@@ -1,25 +1,40 @@
-import React from 'react'
-import Col_centro from './components/colunas/col_centro/components/Col_centro'
-import Col_direita from './components/colunas/col_direita/Col_direita'
-import Col_esquerda from './components/colunas/col_esquerda/Col_esquerda'
-import Layout from '../../shared/layout/Layout'
-function Home() {
+import React from 'react';
+import { Col, Card, ListGroup, Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHome, faGlobe, faCalendarAlt, faUsers } from '@fortawesome/free-solid-svg-icons';
+import CardPerfil from '../../components/CardPerfil';
+import CardTotal from '../../components/CardTotal';
+import CardItem from '../../components/CardItem';
+import CardPost from '../../components/CardPost';
+import CardStories from '../../components/CardStories';
+import CardListaAmigos from '../../components/CardListaAmigos';
+import CardBlog from '../../components/CardBlog';
+import CardAddPost from '../../components/CardAddPost';
+import Layout from '../../layout/Layout';
 
-  return (
-    <>
-      <Layout>
-        <div className="container">
-          <div class="row" style={{ marginTop: "116px" }}>
-            <Col_esquerda />
-            <Col_centro />
-            <Col_direita />
-          </div>
-        </div>
-      </Layout>
+const MyComponent = () => {
+    return (
+        <Layout>
+        <Row style={{ marginTop: "80px" }}>
+            <Col>
+                <CardPerfil />
+                <CardTotal />
+                <CardItem />
+            </Col>
 
+            <Col md={6} lg={7} xl={6}>
+                <CardStories />
+                <CardAddPost/>
+                <CardPost />
+            </Col>
 
-    </>
-  )
-}
+            <Col>
+                <CardListaAmigos />
+                <CardBlog/>
+            </Col>
+        </Row>
+        </Layout>
+    );
+};
 
-export default Home
+export default MyComponent;

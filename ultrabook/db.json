@@ -1,19 +1,16 @@
 {
-  "posts": [
+  "cadastro": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "nome": "",
+      "sobrenome": "",
+      "localizacao": "",
+      "idade": "",
+      "estadoCivil": "",
+      "diaNascimento": "",
+      "mesNascimento": "",
+      "anoNascimento": "",
+      "email": "",
+      "senha": ""
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

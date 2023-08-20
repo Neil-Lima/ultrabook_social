@@ -5,9 +5,9 @@ import { faCalendarAlt, faGlobe, faHome, faUsers } from '@fortawesome/free-solid
 
 const CardItem = () => {
   return (
-    <Card>
-      <Card.Body>
-        <ListGroup>
+    <Card style={{ borderStyle: 'none' }}>
+      <Card.Body style={{ borderStyle: 'none' }}>
+        <ListGroup style={{ borderStyle: 'none' }}>
           <ListGroup.Item style={{ borderStyle: 'none' }}>
             <FontAwesomeIcon icon={faHome} style={{ color: 'var(--bs-primary)' }} /><span><strong> Home</strong></span>
           </ListGroup.Item>

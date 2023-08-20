@@ -2,8 +2,11 @@ import React from 'react';
 import { Navbar, Nav, NavDropdown, FormControl, Button, InputGroup, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCloudShowersHeavy, faSearch, faCommentDots, faBell, faWrench } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 function NavSocial() {
+    const navigate = useNavigate();
+
     return (
         <Navbar bg="light" expand="md" fixed="top" className="py-3" style={{ background: 'var(--bs-white)' }}>
             <Container>
@@ -15,23 +18,25 @@ function NavSocial() {
                 <Navbar.Toggle aria-controls="navcol-2" />
                 <Navbar.Collapse id="navcol-2">
                     <Nav className="ms-auto">
-                        <Nav.Link href="#" className="active">Home</Nav.Link>
+                        <Nav.Link onClick={() => navigate('/')} className="active">Home</Nav.Link>
                         <NavDropdown title="Páginas" id="nav-dropdown">
-                            <NavDropdown.Item href="albuns.html">Albuns</NavDropdown.Item>
-                            <NavDropdown.Item href="celebrações.html">Celebrações</NavDropdown.Item>
-                            <NavDropdown.Item href="mensagens.html">Mensagens</NavDropdown.Item>
-                            {/* Other dropdown items */}
+                            <Button variant="link" onClick={() => navigate('/albuns')} className="dropdown-item">Albuns</Button>
+                            <Button variant="link" onClick={() => navigate('/celebracoes')} className="dropdown-item">Celebrações</Button>
+                            <Button variant="link" onClick={() => navigate('/mensagens')} className="dropdown-item">Mensagens</Button>
+                            <Button variant="link" onClick={() => navigate('/centroajuda')} className="dropdown-item">Centro Ajuda</Button>
+                            <Button variant="link" onClick={() => navigate('/eventos')} className="dropdown-item">Eventos</Button>
+                            <Button variant="link" onClick={() => navigate('/eventosdetalhes')} className="dropdown-item">Detalhes Eventos</Button>
+                            <Button variant="link" onClick={() => navigate('/notificacoes')} className="dropdown-item">Notificações</Button>
                         </NavDropdown>
                         <NavDropdown title="Conta" id="nav-dropdown">
-                            <NavDropdown.Item href="#">Criar uma página</NavDropdown.Item>
-                            <NavDropdown.Item href="configuracoes.html">Configurações</NavDropdown.Item>
-                            <NavDropdown.Item href="notificacoes.html">Notificações</NavDropdown.Item>
-                            {/* Other dropdown items */}
+                            <Button variant="link" onClick={() => navigate('/')}>Criar uma página</Button>
+                            <Button variant="link" onClick={() => navigate('/configuracoes.html')}>Configurações</Button>
+                            <Button variant="link" onClick={() => navigate('/notificacoes.html')}>Notificações</Button>
                         </NavDropdown>
                     </Nav>
-                    <Button variant="primary" className="ms-md-2" href="#" style={{ marginRight: '5px' }}><FontAwesomeIcon icon={faCommentDots} /></Button>
-                    <Button variant="primary" className="ms-md-2" href="#" style={{ marginRight: '5px' }}><FontAwesomeIcon icon={faBell} /></Button>
-                    <Button variant="primary" className="ms-md-2" href="#" style={{ marginRight: '5px' }}><FontAwesomeIcon icon={faWrench} /></Button>
+                    <Button variant="primary" className="ms-md-2" onClick={() => navigate('/')} style={{ marginRight: '5px' }}><FontAwesomeIcon icon={faCommentDots} /></Button>
+                    <Button variant="primary" className="ms-md-2" onClick={() => navigate('/')} style={{ marginRight: '5px' }}><FontAwesomeIcon icon={faBell} /></Button>
+                    <Button variant="primary" className="ms-md-2" onClick={() => navigate('/')} style={{ marginRight: '5px' }}><FontAwesomeIcon icon={faWrench} /></Button>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

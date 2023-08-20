@@ -1,32 +1,59 @@
 import React from 'react';
-import { Card, ListGroup } from 'react-bootstrap';
+import { Box, Button, Input, InputGroup, InputLeftElement } from '@chakra-ui/react';
 import { FaImage, FaVideo, FaLaughBeam, FaCalendarAlt } from 'react-icons/fa';
 
 const CardAddPost = () => {
   return (
-    <Card>
-      <Card.Body>
-        <Card.Title style={{ color: 'var(--bs-primary)' }}>Ultimas notícias</Card.Title>
-        <ListGroup>
-          <ListGroup.Item>
-            <h6 style={{ color: 'rgb(33,37,41)' }}>Madara ou Kaguya: qual mais forte?</h6>
-            <h6 style={{ color: 'rgba(33,37,41,0.58)' }}>2h</h6>
-          </ListGroup.Item>
-          <ListGroup.Item>
-            <h6 style={{ color: 'rgb(33,37,41)' }}>Madara ou Kaguya: qual mais forte?</h6>
-            <h6 style={{ color: 'rgba(33,37,41,0.58)' }}>2h</h6>
-          </ListGroup.Item>
-          <ListGroup.Item>
-            <h6 style={{ color: 'rgb(33,37,41)' }}>Madara ou Kaguya: qual mais forte?</h6>
-            <h6 style={{ color: 'rgba(33,37,41,0.58)' }}>2h</h6>
-          </ListGroup.Item>
-          <ListGroup.Item>
-            <h6 style={{ color: 'rgb(33,37,41)' }}>Madara ou Kaguya: qual mais forte?</h6>
-            <h6 style={{ color: 'rgba(33,37,41,0.58)' }}>2h</h6>
-          </ListGroup.Item>
-        </ListGroup>
-      </Card.Body>
-    </Card>
+    <Box mt="20px" mb="15px" style={{backgroundColor:'white', padding:"20px"}}>
+      <Box mb="10px">
+        <InputGroup mb="27px">
+          <InputLeftElement
+            pointerEvents="none"
+            children={<img src="https://sm.ign.com/t/ign_br/screenshot/default/kakashi-naruto_1rp1.h720.jpg" alt="Profile" width="50px" />}
+          />
+          <Input
+            borderRadius="full"
+            variant="filled"
+            bg="#e3e9ef"
+            type="text"
+            placeholder="No que está pensando?"
+            borderStyle="none"
+          />
+        </InputGroup>
+        <Button
+          colorScheme="gray"
+          mr="5px"
+          mb="3px"
+          leftIcon={<FaImage color="green" />}
+        >
+          Foto
+        </Button>
+        <Button
+          colorScheme="gray"
+          mr="5px"
+          mb="3px"
+          leftIcon={<FaVideo color="blue" />}
+        >
+          Video
+        </Button>
+        <Button
+          colorScheme="gray"
+          mr="5px"
+          mb="3px"
+          leftIcon={<FaLaughBeam color="orange" />}
+        >
+          Atividade
+        </Button>
+        <Button
+          colorScheme="gray"
+          mr="5px"
+          mb="3px"
+          leftIcon={<FaCalendarAlt color="red" />}
+        >
+          Evento
+        </Button>
+      </Box>
+    </Box>
   );
 }
 

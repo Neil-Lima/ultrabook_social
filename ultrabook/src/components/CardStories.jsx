@@ -89,41 +89,33 @@ const CardStories = () => {
       <WidgetContentArea>
         <SingleStoryContainer>
           <SingleStory>
-            <SingleStoryBackground src="https://bootdey.com/img/Content/avatar/avatar1.png" />
+            <SingleStoryBackground src="https://criticalhits.com.br/wp-content/uploads/2022/02/Screenshot-2022-02-24-at-04-25-27-kakashi-naruto_1rp1.1200.jpg-WEBP-Image-1200-%C3%97-674-pixels.png" />
             <StoryAuthor>
               <i className="fa fa-plus-circle fa-2x text-info"></i>
               <CreateStoryAuthor>Criar uma história</CreateStoryAuthor>
             </StoryAuthor>
           </SingleStory>
           <SingleStory>
-            <SingleStoryBackground src="https://bootdey.com/img/Content/avatar/avatar2.png" />
+            <SingleStoryBackground src="https://sm.ign.com/t/ign_br/screenshot/default/madara-plano-olho-da-lua_rtrx.1200.jpg" />
             <StoryAuthor>
-              <StoryAuthorImage src="https://bootdey.com/img/Content/avatar/avatar2.png" />
-              <StoryAuthorName>John</StoryAuthorName>
+              <StoryAuthorImage src="https://criticalhits.com.br/wp-content/uploads/2021/12/20200111-brinquedo-de-coleco-para-fs-uchiha-madara-frete-brinde-d_nq_np_634866-mlb26557161777_122017-f.jpg" />
+              <StoryAuthorName>Madara</StoryAuthorName>
             </StoryAuthor>
           </SingleStory>
           <SingleStory>
-            <SingleStoryBackground src="https://bootdey.com/img/Content/avatar/avatar3.png" />
+            <SingleStoryBackground src="https://criticalhits.com.br/wp-content/uploads/2022/02/signo-sakura-naruto.jpg" />
             <StoryAuthor>
-              <StoryAuthorImage src="https://bootdey.com/img/Content/avatar/avatar3.png" />
-              <StoryAuthorName>Mike</StoryAuthorName>
+              <StoryAuthorImage src="https://criticalhits.com.br/wp-content/uploads/2022/04/Sakura-pensando.jpg" />
+              <StoryAuthorName>Sakura</StoryAuthorName>
             </StoryAuthor>
-          </SingleStory>
+          </SingleStory>    
           <SingleStory>
-            <SingleStoryBackground src="https://bootdey.com/img/Content/avatar/avatar4.png" />
+            <SingleStoryBackground src="https://criticalhits.com.br/wp-content/uploads/2022/06/Sennin_Modo_Hashirama_Senju_-_Anime.png" />
             <StoryAuthor>
-              <StoryAuthorImage src="https://bootdey.com/img/Content/avatar/avatar4.png" />
-              <StoryAuthorName>Lisa</StoryAuthorName>
+              <StoryAuthorImage src="https://criticalhits.com.br/wp-content/uploads/2019/01/Hashirama_Senju_Edo_Tensei_HD.png" />
+              <StoryAuthorName>Sakura</StoryAuthorName>
             </StoryAuthor>
-          </SingleStory>
-          <SingleStory>
-            <SingleStoryBackground src="https://bootdey.com/img/Content/avatar/avatar1.png" />
-            <StoryAuthor>
-              <StoryAuthorImage src="https://bootdey.com/img/Content/avatar/avatar1.png" />
-              <StoryAuthorName>Sagarika</StoryAuthorName>
-            </StoryAuthor>
-          </SingleStory>
-          {/* Adicione os outros componentes SingleStory aqui */}
+          </SingleStory>      
         </SingleStoryContainer>
       </WidgetContentArea>
     </CardStoriesWrapper>

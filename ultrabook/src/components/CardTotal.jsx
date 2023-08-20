@@ -4,7 +4,7 @@ import { ListGroup } from 'react-bootstrap'
 function CardTotal() {
   return (
    <>
-     <ListGroup style={{ marginBottom: '20px' }}>
+     <ListGroup style={{ marginBottom: '20px', borderStyle: 'none' }}>
         <ListGroup.Item style={{ borderStyle: 'none' }}>
           <span style={{ color: 'rgba(33,37,41,0.66)' }}><strong>Seguidores</strong>: <strong>4000</strong></span>
         </ListGroup.Item>

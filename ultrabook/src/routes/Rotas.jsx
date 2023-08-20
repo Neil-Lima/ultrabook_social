@@ -8,6 +8,7 @@ import CentroAjuda from '../pages/CentroAjuda/CentroAjuda'
 import Eventos from '../pages/eventos/Eventos'
 import DetalheEvento from '../pages/detalheEventos/DetalheEvento'
 import Notificacoes from '../pages/notificacoes/Notificacoes'
+import PostVideo from '../pages/PostVideo/PostVideo'
 function Rotas() {
     return (
         <>
@@ -19,6 +20,7 @@ function Rotas() {
                     <Route path="/eventos" element={<Eventos />} />
                     <Route path="/eventosdetalhes" element={<DetalheEvento />} />
                     <Route path="/notificacoes" element={<Notificacoes />} />
+                    <Route path="/postvideo" element={<PostVideo />} />
                 </Routes>
             </BrowserRouter>
         </>

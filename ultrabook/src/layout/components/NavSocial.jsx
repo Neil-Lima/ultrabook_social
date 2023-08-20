@@ -27,6 +27,7 @@ function NavSocial() {
                             <Button variant="link" onClick={() => navigate('/eventos')} className="dropdown-item">Eventos</Button>
                             <Button variant="link" onClick={() => navigate('/eventosdetalhes')} className="dropdown-item">Detalhes Eventos</Button>
                             <Button variant="link" onClick={() => navigate('/notificacoes')} className="dropdown-item">Notificações</Button>
+                            <Button variant="link" onClick={() => navigate('/postvideo')} className="dropdown-item">Post Video</Button>
                         </NavDropdown>
                         <NavDropdown title="Conta" id="nav-dropdown">
                             <Button variant="link" onClick={() => navigate('/')}>Criar uma página</Button>

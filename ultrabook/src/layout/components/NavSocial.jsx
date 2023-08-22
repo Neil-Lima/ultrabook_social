@@ -20,19 +20,20 @@ function NavSocial() {
                     <Nav className="ms-auto">
                         <Nav.Link onClick={() => navigate('/')} className="active">Home</Nav.Link>
                         <NavDropdown title="Páginas" id="nav-dropdown">
-                            <Button variant="link" onClick={() => navigate('/albuns')} className="dropdown-item">Albuns</Button>
+                           
                             <Button variant="link" onClick={() => navigate('/celebracoes')} className="dropdown-item">Celebrações</Button>
                             <Button variant="link" onClick={() => navigate('/mensagens')} className="dropdown-item">Mensagens</Button>
                             <Button variant="link" onClick={() => navigate('/centroajuda')} className="dropdown-item">Centro Ajuda</Button>
                             <Button variant="link" onClick={() => navigate('/eventos')} className="dropdown-item">Eventos</Button>
                             <Button variant="link" onClick={() => navigate('/eventosdetalhes')} className="dropdown-item">Detalhes Eventos</Button>
-                            <Button variant="link" onClick={() => navigate('/notificacoes')} className="dropdown-item">Notificações</Button>
                             <Button variant="link" onClick={() => navigate('/postvideo')} className="dropdown-item">Post Video</Button>
+                            <Button variant="link" onClick={() => navigate('/grupo')} className="dropdown-item">Grupo</Button>
+                            <Button variant="link" onClick={() => navigate('/galeria')} className="dropdown-item">Galeria</Button>
                         </NavDropdown>
                         <NavDropdown title="Conta" id="nav-dropdown">
-                            <Button variant="link" onClick={() => navigate('/')}>Criar uma página</Button>
-                            <Button variant="link" onClick={() => navigate('/configuracoes.html')}>Configurações</Button>
-                            <Button variant="link" onClick={() => navigate('/notificacoes.html')}>Notificações</Button>
+                            <Button variant="link" onClick={() => navigate('/notificacoes')} className="dropdown-item">Notificações</Button>
+                            <Button variant="link" onClick={() => navigate('/login')} className="dropdown-item">Autenticação</Button>
+                            <Button variant="link" onClick={() => navigate('/chat')} className="dropdown-item">Chat</Button>
                         </NavDropdown>
                     </Nav>
                     <Button variant="primary" className="ms-md-2" onClick={() => navigate('/')} style={{ marginRight: '5px' }}><FontAwesomeIcon icon={faCommentDots} /></Button>

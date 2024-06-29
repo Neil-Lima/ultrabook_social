@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Col, Card, Row } from 'react-bootstrap';
+import { Container, Col, Row, Card } from 'react-bootstrap'; // Import necessary React Bootstrap components
 import YouTube from 'react-youtube';
 import CardPerfil from '../../components/CardPerfil';
 import CardTotal from '../../components/CardTotal';
@@ -59,33 +59,23 @@ function PostVideo() {
                     </Col>
 
                     <Col md={6} lg={7} xl={6}>
-                    <Box w="100%" p={4}>
-      <Grid templateColumns="repeat(6, 1fr)" gap={4}>
-        {Array.from({ length: 6 }).map((_, index) => (
-          <Box key={index} colSpan={{ base: 6, md: 2 }}>
-            <Box borderWidth="1px" borderRadius="lg" overflow="hidden">
-              <Image src="https://skdesu.com/wp-content/uploads/2022/09/itachi.jpg" alt="Itachi Uchiha" />
-              <Box p={3}>
-                <VStack align="start">
-                  <Text fontSize="lg" fontWeight="bold">Itachi Uchiha</Text>
-                  <Text fontSize="sm" color="gray.500">156.9k views</Text>
-                </VStack>
-                <Text mt={2}><strong>Itachi preparando ovos.</strong></Text>
-              </Box>
-            </Box>
-          </Box>
-        ))}
-      </Grid>
-    </Box>
+                        {videos.map((video) => (
+                            <Card key={video.id} style={{ marginBottom: '20px' }}>
+                                <YouTube videoId={video.id} opts={videoOpts} />
+                                <Card.Body>
+                                    <Card.Title>{video.title}</Card.Title>
+                                    <Card.Text>{video.description}</Card.Text>
+                                </Card.Body>
+                            </Card>
+                        ))}
                     </Col>
 
                     <Col>
-
+                        {/* Add additional components as needed */}
                     </Col>
                 </Row>
             </Container>
         </Layout>
-
     );
 }
 
